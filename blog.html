@@ -92,33 +92,36 @@
         <article>
             <h2>Differences between
                 LocalStorage, SessionStorage, and Cookies</h2>
-            
-
-<p>
-    <strong>LocalStorage:</strong><br><br>
-
-<strong>Scope:</strong> Works across different browser sessions and tabs.
-Lifespan: Persists even when the browser is closed until manually cleared.
-Use Case: Good for storing data you want to keep for a long time, like user preferences.
-SessionStorage:</p>
-
-<p>
-   <strong> Scope:</strong> Limited to a single browser session and specific to a tab.
-    Lifespan: Clears when the tab is closed or the browser session ends.
-    Use Case: Useful for storing temporary data needed for a short time.
-    Cookies:
-    </p>
 
 
-    <p>
+            <p>
+                <strong>LocalStorage:</strong><br><br>
 
-      <strong>  Scope:</strong> Works across different browser sessions and tabs, sent with every request to the server.
-Lifespan: Can have an expiration date, persists even after the browser is closed if not expired.
-Use Case: Commonly used for authentication tokens and small pieces of data exchanged between the client and server.
+                <strong>Scope:</strong> Works across different browser sessions and tabs.
+                Lifespan: Persists even when the browser is closed until manually cleared.
+                Use Case: Good for storing data you want to keep for a long time, like user preferences.
+                SessionStorage:
+            </p>
+
+            <p>
+                <strong> Scope:</strong> Limited to a single browser session and specific to a tab.
+                Lifespan: Clears when the tab is closed or the browser session ends.
+                Use Case: Useful for storing temporary data needed for a short time.
+                Cookies:
+            </p>
+
+
+            <p>
+
+                <strong> Scope:</strong> Works across different browser sessions and tabs, sent with every request to
+                the server.
+                Lifespan: Can have an expiration date, persists even after the browser is closed if not expired.
+                Use Case: Commonly used for authentication tokens and small pieces of data exchanged between the client
+                and server.
 
 
 
-    </p>
+            </p>
 
 
 
@@ -129,23 +132,19 @@ Use Case: Commonly used for authentication tokens and small pieces of data excha
 
 
         </article>
+
+
 
 
 
         <article>
-            <h2>Blog Post Title 2</h2>
-           
-            
+            <h2>What is Event Loop ?</h2>
 
 
 
-
-
-
-
-
-
-
+            <p>The event loop is like a traffic cop in JavaScript that manages the execution of code. It ensures tasks
+                are processed one by one, allowing non-blocking operations. This helps maintain smooth performance and
+                responsiveness in web applications.</p>
 
 
 
@@ -153,13 +152,36 @@ Use Case: Commonly used for authentication tokens and small pieces of data excha
 
 
         </article>
-
 
         <article>
-            <h2>Blog Post Title 2</h2>
-            <p>Curabitur ut suscipit tellus. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero
-                venenatis faucibus.</p>
+            <h2>Some functions and their works</h2>
+            <p><strong>function 1:</strong><br><br>
+                const quizTimer = (dismiss) => {<br>
+                if (dismiss) {<br>
+                clearInterval(timer);<br>
+
+                return;<br>
+                } <br>
+                <br>
+
+                <strong>note:</strong>This function, quizTimer, takes a parameter dismiss. If dismiss is true, it clears
+                the interval previously set by setInterval(timer). In simple terms, it stops a recurring timer or
+                countdown used in a quiz when the condition is met, likely when the quiz is dismissed or completed.
+            </p>
+
+
+
+            <p>
+
+                
+
+
+            </p>
+
+
+
         </article>
+
 
         <!-- Add more articles as needed -->
     </section>
