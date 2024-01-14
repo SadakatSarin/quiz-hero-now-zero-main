@@ -155,7 +155,11 @@
 
         <article>
             <h2>Some functions and their works</h2>
-            <p><strong>function 1:</strong><br><br>
+            <p>
+                
+                <strong>function 1:</strong><br><br>
+               <span style="color: red;">
+              
                 const quizTimer = (dismiss) => {<br>
                 if (dismiss) {<br>
                 clearInterval(timer);<br>
@@ -163,17 +167,46 @@
                 return;<br>
                 } <br>
                 <br>
+               </span>
 
                 <strong>note:</strong>This function, quizTimer, takes a parameter dismiss. If dismiss is true, it clears
                 the interval previously set by setInterval(timer). In simple terms, it stops a recurring timer or
                 countdown used in a quiz when the condition is met, likely when the quiz is dismissed or completed.
+
+
             </p>
 
 
 
             <p>
 
-                
+                <strong>Function 2:</strong><br><br>
+
+                <span style="color: red;">
+                    const chooseQuiz = (index, givenAns) => {<br>
+                        const isExist = answers.find((ans) => ans.id === quizData[index].id);<br>
+                        if (isExist) {<br>
+                        let serial = 0;<br>
+                        for (let quiz of answers) {<br>
+                        if (isExist.id === quiz.id) {<br>
+                        answers.splice(serial, 1, { ...quizData[index], givenAns });<br>
+                        break;<br>
+                        } <br>
+                        serial++; <br>
+                        } <br>
+                        } else { <br>
+                        answers.push({ ...quizData[index], givenAns }); <br>
+                        } <br>
+                        displayAnswers(answers); <br>
+                        };<br><br>
+                </span>
+
+
+                <strong>note:</strong>
+                This function manages the user's selection of quiz answers, ensuring that the answers are updated or
+                added appropriately in the answers array, and then triggers the display of the answers.
+
+
 
 
             </p>
